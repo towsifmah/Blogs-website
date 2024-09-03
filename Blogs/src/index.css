@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+  @apply text-green-500 underline underline-offset-8
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li{
+  margin: 0 5px;
+}
+
+.pagination p{
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #cccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.pagination p:hover{
+  background: #eee;
+}
+
+.pagination li.activePagination{
+  background: #22c55e;
+  border-radius: 4px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+
+.active-button{
+  color: #22c55e;
+}
